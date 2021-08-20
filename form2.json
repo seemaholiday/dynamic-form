@@ -1,0 +1,51 @@
+{
+    "form": {
+        "sections": [
+            {
+                "order": 1,
+                "section_title": "Basic Info",
+                "fields": [
+                    {
+                        "name": "name",
+                        "label": "Name",
+                        "order": 1,
+                        "hidden": false,
+                        "options": [],
+                        "required": true,
+                        "data_type": "String",
+                        "html_element": "textbox"
+                    }
+                ]
+            },
+            {
+                "order": 2,
+                "section_title": "Other Info",
+                "fields": [
+                    {
+                        "name": "category",
+                        "label": "Category",
+                        "order": 1,
+                        "hidden": false,
+                        "options": [
+                            {
+                                "label": "Category 1",
+                                "value": "category1"
+                            },
+                            {
+                                "label": "Category 2",
+                                "value": "category2"
+                            },
+                            {
+                                "label": "Category 3",
+                                "value": "category3"
+                            }
+                        ],
+                        "required": true,
+                        "data_type": "ArrayString",
+                        "html_element": "select_multiple"
+                    }
+                ]
+            }
+        ]
+    }
+}

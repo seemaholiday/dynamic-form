@@ -1,0 +1,122 @@
+{
+    "form": {
+        "sections": [
+            {
+                "order": 1,
+                "section_title": "Basic Information",
+                "fields": [
+                    {
+                        "name": "name",
+                        "label": "Name",
+                        "order": 1,
+                        "hidden": true,
+                        "options": [],
+                        "required": true,
+                        "data_type": "Integer",
+                        "html_element": "textbox"
+                    },
+                    {
+                        "name": "age",
+                        "label": "Age",
+                        "order": 2,
+                        "hidden": false,
+                        "options": [],
+                        "required": true,
+                        "data_type": "String",
+                        "html_element": "textarea"
+                    },
+                    {
+                        "name": "phone",
+                        "label": "Phone",
+                        "order": 1,
+                        "hidden": true,
+                        "options": [],
+                        "required": true,
+                        "data_type": "Integer",
+                        "html_element": "textbox"
+                    },
+                    {
+                        "name": "email",
+                        "label": "Email",
+                        "hidden": false,
+                        "required": true,
+                        "data_type": "String",
+                        "html_element": "textbox"
+                    },
+                    
+                    {
+                        "name": "Country",
+                        "label": "country",
+                        "hidden": false,
+                        "required": true,
+                        "data_type": "Image",
+                        "html_element": "file"
+                    },
+                    {
+                        "name": "State",
+                        "label": "Category",
+                        "order": 1,
+                        "hidden": false,
+                        "options": [
+                            {
+                                "label": "Category 1",
+                                "value": "category1"
+                            },
+                            {
+                                "label": "Category 2",
+                                "value": "category2"
+                            },
+                            {
+                                "label": "Category 3",
+                                "value": "category3"
+                            }
+                        ],
+                        "required": true,
+                        "data_type": "ArrayString"
+                    },
+                    {
+                        "name": "City",
+                        "label": "city",
+                        "hidden": false,
+                        "options": [
+                            {
+                                "label": "New York",
+                                "value": "newyork"
+                            },
+                            {
+                                "label": "London",
+                                "value": "london"
+                            },
+                            {
+                                "label": "Tronto",
+                                "value": "tronto"
+                            }
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "hobby",
+                        "label": "Hobby",
+                        "hidden": false,
+                        "options": [
+                            {
+                                "label": "Football",
+                                "value": "football"
+                            },
+                            {
+                                "label": "Cricket",
+                                "value": "cricket"
+                            },
+                            {
+                                "label": "Travel",
+                                "value": "travel"
+                            }
+                        ],
+                        "required": true,
+                        "html_element":"select_multiple"
+                    }
+                ]
+            }
+        ]
+    }
+}

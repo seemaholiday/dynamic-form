@@ -1,0 +1,37 @@
+{
+    "form": {
+        "sections": [ //array of sections in the form. each section will have structure as follows
+            {
+                "order": 1, // Integer - order of the section in the form
+                "section_title": "Title of the section to be shown as HTML",
+                "fields": [
+                    {
+                        "name": "id of the HTML Field, used to generate request body when submitting form to the server",
+                        "label": "Label of the form field",
+                        "order": 1 //integer - order of the field in the form when rendering,
+                        "hidden": true //boolean - whether form field is a hidden field,
+                        "options": [
+                            {
+                                "label": "Category 1",
+                                "value": "category1"
+                            },
+                            {
+                                "label": "Category 2",
+                                "value": "category2"
+                            },
+                            {
+                                "label": "Category 3",
+                                "value": "category3"
+                            }
+                        ] //array of label and value for dropdown/multiple selection - only used for select and select_multiple html_element types,
+                        "required": true //boolean - whether this form field is a required field,
+                        "data_type": "Number" //string - used to define and validate the type of value in the form field when submitting the form to the server
+                                              // possible values - String (Single Text Value), Integer (Single Integer Value), Float (Single Float Value), File (Single File of any type), Image (Single File of types JPG/JPEG or PNG), ArrayString (Array of Text Value - only used for select_multiple html_element types), ArrayInteger (Array of Integer Value - only used for select_multiple html_element types), ArrayFloat (Array of Float Value - only used for select_multiple html_element types)
+                        "html_element": "textbox" //string - type of html form element to render
+                                                  // possible values - textbox, textarea, file, select (dropdown), select_multiple (select with multiple selections allowed)
+                    }
+                ]
+            }
+        ]
+    }
+}
